@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Spaghetti Bolognese",
+    "ingredients": [
+      "spaghetti",
+      "minced meat",
+      "tomato sauce",
+      "onion",
+      "garlic",
+      "herbs"
+    ]
+  },
+  {
+    "name": "Chicken Curry",
+    "ingredients": [
+      "chicken",
+      "curry paste",
+      "coconut milk",
+      "onion",
+      "ginger",
+      "garlic",
+      "spices"
+    ]
+  },
+  {
+    "name": "Vegetable Stir-Fry",
+    "ingredients": [
+      "mixed vegetables",
+      "tofu",
+      "soy sauce",
+      "ginger",
+      "garlic",
+      "rice"
+    ]
+  },
+  {
+    "name": "Beef Stew",
+    "ingredients": [
+      "beef",
+      "potatoes",
+      "carrots",
+      "onion",
+      "beef broth",
+      "tomato paste",
+      "herbs"
+    ]
+  },
+  {
+    "name": "Mushroom Risotto",
+    "ingredients": [
+      "arborio rice",
+      "mushrooms",
+      "onion",
+      "white wine",
+      "parmesan cheese",
+      "butter"
+    ]
+  },
+  {
+    "name": "Fish Tacos",
+    "ingredients": [
+      "fish fillets",
+      "tortillas",
+      "cabbage",
+      "lime",
+      "sour cream",
+      "cilantro",
+      "spices"
+    ]
+  },
+  {
+    "name": "Caprese Salad",
+    "ingredients": [
+      "tomatoes",
+      "mozzarella cheese",
+      "basil leaves",
+      "balsamic vinegar",
+      "olive oil",
+      "salt",
+      "pepper"
+    ]
+  },
+  {
+    "name": "Chicken Alfredo",
+    "ingredients": [
+      "chicken",
+      "fettuccine",
+      "cream",
+      "parmesan cheese",
+      "garlic",
+      "butter",
+      "parsley"
+    ]
+  },
+  {
+    "name": "Chocolate Cake",
+    "ingredients": [
+      "flour",
+      "sugar",
+      "cocoa powder",
+      "eggs",
+      "milk",
+      "butter",
+      "vanilla extract"
+    ]
+  },
+  {
+    "name": "Greek Salad",
+    "ingredients": [
+      "cucumbers",
+      "tomatoes",
+      "red onion",
+      "feta cheese",
+      "olives",
+      "olive oil",
+      "oregano"
+    ]
+  }
+]

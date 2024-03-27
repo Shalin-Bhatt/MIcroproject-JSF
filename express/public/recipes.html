@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyRecipes - Recipes</title>
+    <link rel="stylesheet" href="/styles/styles.css"> 
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>Recipes</h1>
+    <div id="data-container" class="recipes-container"></div>
+    <script src="js/script.js"></script>
+    <script>
+        // Function to fetch and display recipes
+        async function fetchAndDisplayRecipes() {
+            const dataContainer = document.getElementById('data-container');
+
+            try {
+                const response = await fetch('/recipes');
+                const recipes = await response.json();
+                displayRecipes(recipes);
+            } catch (error) {
+                console.error('Error fetching recipes:', error);
+            }
+
+            function displayRecipes(recipes) {
+                // Clear previous recipes
+                dataContainer.innerHTML = '';
+
+                // Display recipes
+                recipes.forEach(recipe => {
+                    const recipeElement = document.createElement('div');
+                    recipeElement.classList.add('recipe');
+                    recipeElement.innerHTML = `
+                        <h3>${recipe.name}</h3>
+                        <ul>
+                            ${recipe.ingredients.map(ingredient => `<li> - ${ingredient}</li>`).join('')}
+                        </ul>
+                    `;
+                    dataContainer.appendChild(recipeElement);
+                });
+            }
+        }
+
+        // Call the function to fetch and display recipes on page load
+        fetchAndDisplayRecipes();
+
+    </script>
+</body>
+</html>
